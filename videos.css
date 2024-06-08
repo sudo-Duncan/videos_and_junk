@@ -1,0 +1,692 @@
+/* Google Font Import */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+
+/* Font Info 
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 700
+
+.cormorant-<uniquifier> {
+  font-family: "Cormorant", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+
+/* featured section */
+
+#features-container h2 {
+    color: #5A0A01;
+    text-transform: uppercase;
+    border-bottom: 4px solid #5A0A01;
+    width: 40%;
+    margin-bottom: 25px;
+}
+
+#features-container a {
+    text-decoration: none;
+    color: #F5EFED;
+}
+
+.feature-box-image {
+    width: 100%;
+    height: 60%;
+    background: url(../images/placeholder-image.jpg) no-repeat center / cover;
+
+}
+
+.feature-image-one {
+    width: 100%;
+    height: 60%;
+    background: url(../images/password.jpeg) no-repeat center / cover;
+}
+
+.feature-image-two {
+    width: 100%;
+    height: 60%;
+    background: url(../images/home-network.jpg) no-repeat center / cover;
+}
+
+.feature-image-three {
+    width: 100%;
+    height: 60%;
+    background: url(../images/educate.jpeg) no-repeat center / cover;
+}
+
+.blog-icon {
+    border: 1px solid #F5EFED;
+    border-radius: 5px;
+    padding: 5px; 
+    width: fit-content;
+    margin: 10px;
+    color: #F5EFED;
+}
+
+.feature-box {
+    background-color: #5A0A01;
+    /*border-radius: 10px;*/
+    height: 300px;
+    padding: 0;
+    border: 3px solid white;
+}
+
+#feature-two {
+    height: 100%;
+}
+
+#features-container h5 {
+    padding-left: 10px;
+}
+
+@media screen and (min-width: 992px) {
+    /* feature section */
+
+    #feature-two, 
+    #feature-three {
+        height: 50%;
+        font-size: 80%;
+    }
+
+    #feature-two h5, 
+    #feature-three h5 {
+        font-size: 100%;
+    }
+
+    #feature-one:hover,
+    #feature-two:hover,
+    #feature-three:hover {
+        background-color: #5C80BC;
+    }
+}
+
+/* ---------- General Styles ---------- */
+
+
+body {
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    /* Generic Project Text Styles */
+    background-color:#ffead0;
+    color: #363732;
+    font-family: 'decide', sans-serif;
+}
+
+h1 {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.general-sub {
+    font-family: "Cormorant", sans-serif;
+    font-weight: 300;
+    color: #fafafa;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* ---------- Colors ---------- */
+
+
+/* ---------- Nav Bar ---------- */
+
+header {
+    background-color: #1a0001;
+    padding: 0px 5px 5px;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 1px 1px #363732;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.navbar {
+    margin-top: auto;
+    margin-left: 0;
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+    background-color: #1a0001;
+    /* Over Ride Bootstrap Defaults */
+    --bs-navbar-hover-color: #ff5301;
+    /* --bs-navbar-toggler-icon-color: #ff5301; */
+    z-index: 1;  
+}
+
+.navbar .navbar-brand {
+    font-weight:  bold;
+    color: #ffead0;
+}
+
+.nav-link {
+    font-weight: bold;
+    color: #ffead0;
+}
+
+navbar-toggler-icon {
+    color: #ffead0;
+}
+
+/* .nav-link a:hover,
+.nav-link a:active,
+.nav-link a:focus,
+.nav-link a:active:focus, {
+    color: #ff5301;
+    background-color: #df4929;
+    border-color: #df4929;
+} */
+
+
+
+/* ----------Hero Image -------*/
+#hero {
+    height: 600px;
+    width: 100%;
+    background: url("../images/hero-2.jpg") no-repeat center center/cover;
+    position: relative;
+}
+/* guide */
+#newsletter {
+    height: 600px;
+    width: 100%;
+    background: url("../images/soldiers.jpeg") no-repeat center center/cover;
+    position: relative;
+}
+/* Email sign up */
+input[type=email]:focus {
+    border: 3px solid #555;
+    margin:auto;
+}
+
+/* ---------- Video Resources ---------- */
+
+/* Following are BS classes */
+
+/* ratio ratio-16x9 embed-responsive-item */
+/* See https://getbootstrap.com/docs/5.3/helpers/ratio/ */
+
+
+
+.iframe-container{
+    position: relative;
+    margin-top: 10%;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 15em;
+    padding-top: 2rem;
+    border: 0px;
+}
+
+.embed-responsive-item {
+    aspect-ratio: 16 / 9;
+    width: 90%;
+}
+
+
+
+
+
+/* ---------- Resources ---------- */
+
+/* #resources-video-container {
+    width: 90%;
+    margin: 7em auto 1em;
+}
+
+#resources-video-title {
+    width: 90%;
+    margin: 7em auto 1em;
+    font-family: "Cormorant", serif;
+}
+
+.resources-icon {
+    border: 1px solid #F5EFED;
+    border-radius: 5px;
+    padding: 5px; 
+    width: fit-content;
+    margin: 10px;
+    color: #F5EFED;
+}
+
+
+.iframe-container{
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 2rem;
+    padding-left: 20%;
+    padding-bottom: 25%;
+    border: 0px;
+}
+
+.responsive-iframe {
+    aspect-ratio: 16 / 9;
+    width: 50%;
+}
+.iframe-container > h5 {
+    text-align: justify;
+    margin-left: 3em;
+}
+
+.resources-text-container {
+    padding-top: 4rem;
+}
+
+.resources-text-container a {
+    text-decoration: none;
+    color: #F5EFED;
+}
+
+#resources-video-container h2,
+#resources-text-container h2 {
+    color: #1a0001;
+    text-transform: uppercase;
+    border-bottom: 4px solid #1a0001;
+    width: 40%;
+    margin-bottom: 25px;
+}
+
+.resource-one h5 {
+    font-size: 90%;
+}
+
+.resource-one p {
+    font-size: 80%;
+} */ 
+
+/* .resources-box {
+    background-color: #1a0001;
+    /* border-radius: 10px; */
+    /* height: 300px;
+    padding: 0;
+    color: #ffead0;
+} */
+
+/* .resource-box-image-1 {
+    width: 50%;
+    height: 50%;
+    background: url(../images/uk_gov.png) no-repeat center / cover;
+}
+
+.resource-box-image-2 {
+    width: 50%;
+    height: 50%;
+    background: url(../images/bristol_send.png) no-repeat center / cover;
+}
+
+.resource-box-image-3 {
+    width: 50%;
+    height: 50%;
+    background: url(../images/CEOPBlueTagline.png) no-repeat center / cover;
+}
+
+.resource-box-image-4 {
+    width: 50%;
+    height: 50%;
+    background: url(../images/age-uk.png) no-repeat center / cover;
+}
+
+.resource-box-image-5 {
+    width: 50%;
+    height: 50%;
+    background: url(../images/StaySafe-Updated-2023.webp) no-repeat center / cover;
+}
+
+.resource-box-image-6 {
+    width: 50%;
+    height: 50%;
+    background: url(../images/Good_Things_Found.png) no-repeat center / cover;
+}
+
+.resource-two {
+    height: 100%;
+}
+
+#resources-text-container h5 {
+    padding-left: 10px;
+}
+
+@media screen and (min-width: 992px) {
+    /* resources section */
+
+    /* .resource-two, 
+    .resource-three {
+        height: 50%;
+        font-size: 80%;
+    }
+
+    .resource-two h5, 
+    .resource-three h5 {
+        font-size: 100%;
+    }
+
+    .resource-one:hover,
+    .resource-two:hover,
+    .resource-three:hover {
+        background-color: rgba(216,219,226,0.1);
+    }
+} */
+
+/* ---------- Buttons ---------- */
+
+
+
+/* ---------- Footer ---------- */
+footer{
+    margin-top: auto;
+    width: 100%;
+}
+
+#footer-details {
+    background-color: #363732;
+    padding: 5px;
+
+}
+
+#social-networks {
+    padding-bottom: 15px;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    /* color: #1a0001; */
+}
+
+
+#social-networks li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    /* font-size: 13px; */
+    line-height: 7px;
+    text-align: center;
+    color: #d8dbe2;
+    background: #363732;
+    transition: all 0.35ms ease-in-out;
+    -moz-transition: all 0.35ms ease-in-out;
+    -webkit-transition: all 0.35ms ease-in-out;
+    -o-transition: all 0.35ms ease-in-out;
+}
+
+#social-networks li a i:hover {
+    background: #e84610;
+}
+
+/* ---------- Guide Section ---------- */
+.guide-heading {
+    color:#5A0A01;
+    font-size: 4em;
+    margin: 100px 20% 0
+}
+
+.guide-list {
+    color:#ffead0;
+    margin-top: 5%;
+}
+
+#guide-image {
+    height: 600px;
+    width: 100%;
+    background: url("../images/guide-image.jpg") no-repeat center / cover;
+    margin-top: 10px;
+}
+
+.password-protect-image {
+    width: 100%;
+    height: 20%;
+    background: url("../images/protect-password2.jpeg") no-repeat center / cover;
+}
+
+.malware-image {
+    width: 100%;
+    height: 20%;
+    background: url("../images/malware2.jpeg") no-repeat center / cover;
+}
+
+.cyberbullying-image {
+    width: 100%;
+    height: 20%;
+    background: url("../images/cyberbullying.jpeg") no-repeat center / cover;
+}
+
+.phishing-image {
+    width: 100%;
+    height: 20%;
+    background: url("../images/phishing-account.jpg") no-repeat center / cover;
+}
+
+.social-media-image {
+    width: 100%;
+    height: 20%;
+    background: url("../images/social-media.jpeg") no-repeat center / cover;
+}
+
+.child-safety-image {
+    width: 100%;
+    height: 20%;
+    background: url("../images/child-safety.jpeg") no-repeat center / cover;
+}
+
+@media screen and (min-width: 768px) {
+    .guide-heading {
+        font-size: 4em;
+        margin: 100px 20% 0
+    }
+
+}
+
+/* Newsletter page */
+
+#newsletter-main {
+    text-align:center;
+    color:#5A0A01;
+    margin-bottom: 3%;
+}
+
+/* Blog Page */
+
+.article-blog {
+    margin-top:40px;
+    padding: 20px;
+    color: #5A0A01;
+    font-size: 120%;
+
+}
+.article-header {
+    background-color: transparent;
+    position: static;
+    box-shadow: none;
+    padding: 0;
+    flex-direction: column;
+}
+
+.category-icon {
+    width: fit-content;
+    height: 1.5em;
+    background-color: #e84610;
+    border-radius: 0.5em;
+    color: #ffead0;
+    font-size: 80%;
+    text-align: center;
+    padding: 0 0.2em;
+    text-transform: uppercase;
+}
+
+.article-blog a {
+    text-decoration: none;
+}
+
+.article-heading {
+    font-size: 140%;
+    
+}
+
+.article-blog span {
+    display: block;
+}
+
+.article-main {
+    font-size: 100%;
+}
+
+.article-images {
+    object-fit: cover;
+    height:inherit;
+}
+
+.carousel-image-container {
+    height: 500px;
+}
+
+.cormorant-font {
+    font-family: "Cormorant", serif;
+}
+
+.article-footer {
+    margin-top: 40px;
+}
+
+.blog-nav {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 90%;
+}
+
+.prv-nav {
+    border-right: 1px solid #5A0A01;
+}
+
+.nxt-nav {
+    border-left: 1px solid #5A0A01;
+}
+
+.article-footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Blog Nav */
+#blog-nav-main {
+    text-align: center;
+}
+
+#blog-nav-h2 {
+    color: #5A0A01;
+    padding: 10px 10px 20px 10px;
+    font-size:200%;
+}
+
+.blog-nav-box {
+    height: 300px;
+    padding: 0;
+    text-align: left;
+}
+
+.blog-nav-box a {
+    color: #5A0A01;
+    text-decoration: none;
+    position: relative;
+}
+
+.special-container {
+    width:100%; 
+    height:300px; 
+    background-color:white; 
+    position:relative;
+}
+
+.special-container img {
+    width:inherit; 
+    height:inherit; 
+    object-fit:cover; 
+    opacity:0.3;
+}
+
+.special-container-inner {
+    width:80%; 
+    height:inherit; 
+    position:absolute; 
+    z-index: 2; 
+    bottom:0; 
+    top:20%;
+    left:10%;
+}
+
+@media screen and (min-width: 768px) {
+    /* blog section */
+    
+    .article-blog {
+        margin: 56px 20% 0;
+    
+    }
+
+    .article-heading {
+        font-size: 200%;
+        
+    }
+    .article-header,
+    .article-main {
+        font-size: 110%;
+    
+    }
+
+    .article-blog span {
+        display: inline-block;
+    }
+
+    .article-blog h3 {
+        font-size: 130%;
+    }
+
+    .blog-nav {
+        font-size: 130%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    /* blog section */
+
+    .article-heading {
+        font-size: 250%;
+        
+    }
+
+    .article-header,
+    .article-main {
+        font-size: 140%;
+    
+    }
+
+    .category-icon:hover {
+        background-color: #5A0A01;
+        color:#ffead0;
+    }
+
+    .article-footer a:hover {
+        color: #ff5301;
+        font-size: 120%;
+    }
+
+}
+
